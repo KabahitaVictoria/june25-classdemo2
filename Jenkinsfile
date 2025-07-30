@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/KabahitaVictoria/june25-classdemo2.git' // Specify your Git repository URL here
+                git branch: 'main', url: 'https://github.com/KabahitaVictoria/june25-classdemo2.git' // Specify your Git repository URL here
             }
         } 
         stage('Setup Virtual Environment') {
