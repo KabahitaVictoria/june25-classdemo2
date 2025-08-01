@@ -28,3 +28,8 @@ jobs:
         run: |
           source $VENV/bin/activate
           pytest 
+
+      - name: Lint code with pylint
+        run: |
+          source $VENV/bin/activate
+          pylint . --ignore=venv,.pytest_cache
