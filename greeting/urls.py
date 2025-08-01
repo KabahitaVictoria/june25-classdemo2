@@ -1,3 +1,4 @@
+"""URL patterns for the greeting app."""
 from django.urls import path
 from . import views
 
