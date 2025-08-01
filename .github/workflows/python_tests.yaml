@@ -24,12 +24,8 @@ jobs:
           source $VENV/bin/activate
           pip install -r requirements.txt
 
-      - name: Run Tests
+      - name: Run Tests and Lint with pytest
         run: |
           source $VENV/bin/activate
           pytest 
-
-      - name: Lint code with pylint
-        run: |
-          source $VENV/bin/activate
           pylint . --ignore=venv,.pytest_cache
