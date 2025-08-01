@@ -22,4 +22,3 @@ class GreetingTests(TestCase):
         """Test that the greeting in context is 'Hello'."""
         response = self.client.get(reverse('index'))
         self.assertEqual(response.context['greeting'], 'Hello')
-        
